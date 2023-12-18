@@ -33,6 +33,6 @@ public class CvthequeApplication {
 		return new CorsFilter(urlBasedCorsConfigurationSource);
 	}
 	public void doSomething() {
-		System.out.println("Doing something!!...");
+		System.out.println("Do something!!...");
 	}
 }
