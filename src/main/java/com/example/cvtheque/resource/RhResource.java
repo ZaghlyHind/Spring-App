@@ -23,16 +23,19 @@ public class RhResource {
         RH rh = rhService.findRhById(id);
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
+
     @GetMapping("/profile/{rhId}")
     public ResponseEntity<RH> getProfileRH(@PathVariable int rhId) {
         RH rh = rhService.getProfileRH(rhId);
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
+
     @PutMapping("/update")
     public ResponseEntity<RH> updateRh(@RequestBody RH rh) {
         RH updateRh = rhService.updateRh(rh);
         return new ResponseEntity<>(updateRh, HttpStatus.OK);
     }
+
     @PostMapping("/login")
     public ResponseEntity<RH> login(@RequestBody LoginRequest loginRequest) {
         String email = loginRequest.getEmail();
@@ -41,8 +44,5 @@ public class RhResource {
         RH rh = rhService.login(email, password);
 
         return new ResponseEntity<>(rh, HttpStatus.OK);
-    }
-    public void doSomething(){
-        System.out.println("DO");
     }
 }
