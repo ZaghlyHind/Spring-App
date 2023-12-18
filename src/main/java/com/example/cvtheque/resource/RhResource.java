@@ -45,4 +45,7 @@ public class RhResource {
 
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
+    public void test{
+        System.out.println("Conflict");
+    }
 }
