@@ -32,5 +32,7 @@ public class CvthequeApplication {
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
 	}
-
+	public void doSomething() {
+		System.out.println("Doing something...");
+	}
 }
