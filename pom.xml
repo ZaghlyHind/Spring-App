@@ -73,11 +73,7 @@
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>3.9.0.2155</version> <!-- Replace with the latest version -->
 			</plugin>
-			<plugin>
-					<groupId>org.jacoco</groupId>
-					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>0.8.1</version>
-			</plugin>
+
 		</plugins>
 	</build>
 
