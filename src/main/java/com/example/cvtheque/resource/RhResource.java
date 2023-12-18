@@ -45,7 +45,7 @@ public class RhResource {
 
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
-    public void NoConflict{
+    public void NoConflict(){
         System.out.println("Diffrent lines");
     }
 }
