@@ -30,11 +30,6 @@ public class RhResource {
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<RH> updateRh(@RequestBody RH rh) {
-        RH updateRh = rhService.updateRh(rh);
-        return new ResponseEntity<>(updateRh, HttpStatus.OK);
-    }
 
     @PostMapping("/login")
     public ResponseEntity<RH> login(@RequestBody LoginRequest loginRequest) {
