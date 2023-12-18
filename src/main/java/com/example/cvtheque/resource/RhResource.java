@@ -42,4 +42,6 @@ public class RhResource {
 
         return new ResponseEntity<>(rh, HttpStatus.OK);
     }
-}
+    public void doSomething() {
+        System.out.println("Doing something...");
+    }
