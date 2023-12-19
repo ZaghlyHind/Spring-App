@@ -21,6 +21,9 @@ import java.util.List;
 @RequestMapping("/candidature")
 public class CandidatureResource {
     private final CandidatureService candidatureService;
+    /**
+     * Service responsible for managing entretien-related operations.
+     */
     private final EntretienService entretienService;
     private final CandidatService candidatService;
     private final PosteService posteService;
